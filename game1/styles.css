@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
 }
+
 body {
   background-color: green;
 }
@@ -19,21 +20,22 @@ body {
 }
 
 .high {
+  margin-top: 50px;
   display: flex;
   flex-direction: row;
-  justify-content:space-around;
+  justify-content: space-around;
 }
 
 .middle {
   display: flex;
   flex-direction: row;
-  justify-content:space-around;
+  justify-content: space-around;
 }
 
 .low {
   display: flex;
   flex-direction: row;
-  justify-content:space-around;
+  justify-content: space-around;
 }
 
 .block__img {
@@ -56,7 +58,7 @@ body {
   width: 70px;
   height: 70%;
   display: none;
-  
+
 }
 
 #btf1 {
@@ -71,11 +73,18 @@ body {
 
 p {
   font-size: 34px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Press Start 2P', cursive;
   justify-content: center;
+  color: rgb(218, 233, 1);
 }
 
 .textWrap {
   display: flex;
   justify-content: center;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  p {
+    font-size: 18px;
+  }
 }
