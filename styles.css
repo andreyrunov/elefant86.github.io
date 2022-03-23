@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+hr {
+  width: 60px;
+  height: 5px;
+  background-color: rgb(209, 47, 7);
+  position: absolute;
+  border-style: none;
+  z-index: 5;
+}
+
+.main__text {
+  display: none;
+}
+
+.mount {
+  height: 600px;
+  position: absolute;
+  left: -170px;
+}
+
+.win {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  z-index: 3;
+  top: 0px;
+  left: 650px;
+  visibility: hidden;
+}
+
+.climber {
+  height: 80px;
+  width: 60px;
+}
+
+.div__steps {
+  height: 80px;
+  width: 60px;
+  position: absolute;
+  z-index: 2;
+}
+
+.div__step1 {
+  bottom: 10px;
+  left: 70px;
+}
+
+.div__step2 {
+  bottom: 130px;
+  left: 200px;
+}
+
+.div__step3 {
+  bottom: 260px;
+  left: 340px;
+}
+
+.div__step4 {
+  bottom: 295px;
+  left: 460px;
+}
+
+.div__step5 {
+  bottom: 350px;
+  left: 600px;
+}
+
+.div__final {
+  bottom: 465px;
+  left: 725px;
+}
+
+.step1 {
+  bottom: 90px;
+  left: 70px;
+}
+
+.step2 {
+  bottom: 210px;
+  left: 200px;
+}
+
+.step2 {
+  bottom: 210px;
+  left: 200px;
+}
+
+.step3 {
+  bottom: 340px;
+  left: 340px;
+}
+
+.step4 {
+  bottom: 375px;
+  left: 460px;
+}
+
+.step5 {
+  bottom: 430px;
+  left: 600px;
+}
+
+.final {
+  bottom: 545px;
+  left: 725px;
+}
+
+.wrapper {
+  display: flex;
+  width: 100%;
+  
+}
+
+.frame {
+  width: 80%;
+  height: 600px;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  z-index: 1;
+}
+
+.left {
+  background-color: green;
+  width: 10%;
+  position: relative;
+  z-index: 3;
+}
+
+.right {
+  background-color: green;
+  width: 10%;
+  position: relative;
+  z-index: 3;
+}
+
+.bottom {
+  background-color: green;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.btnZ {
+  margin: 10px 15px;
+  width: 100px;
+  height: 30px;
+  outline: none;
+}
+
+.btnX {
+  margin: 10px 15px;
+  width: 100px;
+  height: 30px;
+  outline: none;
+}
+
+@media (min-width: 0px) and (max-width: 1023px) {
+
+  .wrapper, .bottom {
+    display: none;
+  }
+
+  .main {
+    position: relative;
+    z-index: 12;
+    width: 100%;
+    height: 100%;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main__text {
+    display: flex;
+    margin-top: 50px;
+    width: 60%;
+    font-size: 28px;
+  }
+
+  body {
+    background-color: green;
+  }
+
+}
+
